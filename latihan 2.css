@@ -1,0 +1,201 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: poppins,sans-serif;
+}
+
+body{
+	 
+	 color: white;
+
+}
+.header{
+	 position: fixed;
+	 top:0;
+	 left: 0;
+	 padding:30px;
+	 background-color: transparent;
+	 width: 100%;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 z-index: 100;
+
+
+}
+.logo{
+	 font-size: 25px;
+	 color:white;
+	 text-decoration: none;
+	 font-weight: bold;
+
+}
+.navbar a {font-size: 15px;
+	      color: #E0AAFF;
+	      text-decoration: none;
+	      font-weight: bold;
+	      margin-left: 35px;
+	      transition: 3s;
+
+
+}
+.navbar a:hover,
+.navbar a.active{
+          
+	  color: #2EC4B6;
+
+
+}
+.home{
+	 height:100vh;
+	 display: flex;
+	 align-items: center;
+	 padding: 0 10%;
+     background-image: url(gambar2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+
+}
+.home-content{
+	
+	max-width: 600px;
+	 }
+.home-content h1 {
+	 font-size: 56px;
+	 font-weight: bold;
+	 line-height: 1.2;
+
+
+}
+.home-content h3{
+	  font-size: 32px;
+	  font-weight: 700;
+	  color: #22007C;
+
+}
+.home-content p {
+	font-size: 16px;
+	margin:20px 0 40px;
+	line-height: 1.2;
+
+
+
+}
+.home-content .btn-box{
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	 width:345px;
+	 height: 50px;
+	 
+
+}
+.btn-box a{
+	 position: relative;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	 width: 150px;
+	 height: 100%;
+	 background-color: skyblue;
+	 border: 2px solid skyblue;
+	 border-radius: 0px;
+	 font-size: 19px;
+	 color: #134074;
+	 text-decoration: none;
+	 font-weight: 600;
+
+	 letter-spacing: 1px;
+	 z-index: 1;
+	 overflow: hidden;
+	 transition: .5s;
+
+	 
+
+
+}
+.btn-box a:hover{
+	color: skyblue;
+}
+.btn-box a:nth-child(2){
+	 background: transparent;
+      color: #134074;
+}
+.btn-box a:nth-child(2):hover{
+	 color: #134074;
+}
+
+.btn-box a:nth-child(2)::before{
+	background-color:skyblue ;
+
+}
+
+.btn-box a::before{
+	 content:"";
+    width: 0;
+    height: 100%;
+
+	 position: absolute;
+	 top:0;
+	 left: 0;
+	 background:#001427;
+	 z-index: -1;
+	 transition:0.5s;
+
+	  }
+.btn-box a:hover::before{
+	width: 100%;
+}
+.home-sci{
+	 position: absolute;
+	 bottom: 40px;
+	 width: 170px;
+	 
+	 display: flex;
+	 justify-content: space-between;
+
+}
+.home-sci a{
+	position: relative;
+
+	 display: inline-flex;
+	 justify-content: center;
+	 align-items: center;
+	 width: 40px;
+	 height:40px;
+	 background: transparent;
+	 border: 2px solid skyblue;
+	 border-radius: 50%;
+	 font-size: 20px;
+	 color: skyblue;
+	 text-decoration: none;
+	 z-index: 1;
+	 overflow: hidden;
+	 transition: .5s;
+
+
+
+}
+.home-sci a:hover{
+	color:#003049;
+}
+.home-sci a::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height:100%;
+	background: skyblue;
+	z-index: -1;
+	transition: .5s;
+
+
+}
+.home-sci a:hover::before{
+	width:100%;
+}
